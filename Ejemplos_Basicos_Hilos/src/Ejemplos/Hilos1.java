@@ -1,4 +1,4 @@
-package Ejemplos;
+package ejemplos;
 
 ///Primero heredar la clase Hilos Thread
 public class Hilos1  extends Thread{

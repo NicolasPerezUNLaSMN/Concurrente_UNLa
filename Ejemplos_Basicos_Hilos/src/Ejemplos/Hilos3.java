@@ -1,4 +1,4 @@
-package Ejemplos;
+package ejemplos;
 
 ///Primero heredar la clase Hilos2 Thread
 public class Hilos3  extends Thread{
@@ -56,10 +56,13 @@ public class Hilos3  extends Thread{
 		//se ejecute siempre, despues del hilo 0
 		
 		try {
-			vectorDeHilos[0].join();
-		}catch(Exception ex){}
+			vectorDeHilos[0].join(); //Esperar hasta que termine el run del hilo
+		}catch(Exception ex){} //Como no sabemos cuando se ejecuta el 0, tampoco
+		//sabemos cuando se ejetuca el main O___O
 		
+		//Ejercicio: Hacer que el main se ejecute despues de TODOS!!!
 		
+		//Ejercicio: Qué pasaria si hago el join en el for que hace el start?
 		
 		System.out.println("Soy el main!!!");
 		
