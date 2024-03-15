@@ -8,7 +8,7 @@ public class Interbloqueos2 implements Runnable {
 	
 	//cerrojos
 	private static Random cerrojo1 = new Random();
-	private static Random cerrojo2 = new Random();
+
 	
 	private int contPrivado = 0 ;  //Buffer, contador local
 	private static int cont = 0;  //Esta es la critica y compartida
